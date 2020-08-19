@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
             // if we need JSON
             const object = {};
             formData.forEach(function(value, key){
-                object[key] = value;
+                object[value] = key;
             });
 
             fetch('server.php', {
